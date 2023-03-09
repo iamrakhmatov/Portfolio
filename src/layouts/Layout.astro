@@ -1,0 +1,26 @@
+---
+// import { Header } from "../components/Header";
+import "@fontsource/acme";
+import "@fontsource/anonymous-pro";
+// import { SocialMedia } from "@components/SocialMedia";
+// import { Footer } from "@components/Footer";
+export interface Props {
+  title: string;
+  class?: string;
+}
+const props = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{props.title}</title>
+  </head>
+  <body class={props.class}>
+    <slot />
+  </body>
+</html>

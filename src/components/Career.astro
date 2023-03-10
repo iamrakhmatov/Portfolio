@@ -1,0 +1,25 @@
+---
+import Timeline from "@icons/Timeline.astro";
+import ResumeButton from "./button/Resume.astro";
+---
+
+<div class="relative w-full">
+  <div
+    class="absolute -top-80 left-0 h-[40rem] w-full bg-gradient-to-t from-white via-white"
+  >
+  </div>
+  <div class="relative h-36 w-full bg-transparent"></div>
+  <div class="relative z-20 flex items-center bg-white flex-col">
+    <p
+      class="absolute -top-20 -left-5 font-acme text-[12rem] font-extrabold tracking-widest text-purple-100/30"
+    >
+      <span
+        class="bg-gradient-to-r from-purple-100/50 bg-clip-text text-transparent"
+      >
+        Timeline
+      </span>
+    </p>
+    <Timeline className="ml-[120px]" />
+    <ResumeButton />
+  </div>
+</div>

@@ -8,9 +8,10 @@
       "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
       "@images/*": ["src/images/*"],
+      "@icons/*": ["src/icons/*"],
       "@utils/*": ["src/utils/*"]
     },
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js"
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

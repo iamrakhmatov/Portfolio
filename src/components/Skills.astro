@@ -17,11 +17,10 @@ import Docker from "@icons/Docker.astro";
 // import Apollo from "@icons/Apollo.astro";
 // import Redux from "@icons/Redux.astro";
 // import Lambda from "@icons/Lambda.astro";
-// import GitBranch from "@icons/GitBranch.astro";
 // import Terraform from "@icons/Terraform.astro";
-// import GitMerge from "@icons/GitMerge.astro";
-// import GitPullRequest from "@icons/GitPullRequest.astro";
-// import GitDraft from "@icons/GitDraft.astro";
+import GitMerge from "@icons/GitMerge.astro";
+import GitPullRequest from "@icons/GitPullRequest.astro";
+import GitDraft from "@icons/GitDraft.astro";
 ---
 
 <div class="relative h-screen w-full">
@@ -36,12 +35,17 @@ import Docker from "@icons/Docker.astro";
         TS
       </h1>
     </div>
-    <div class="absolute right-[5%] top-0">
-      <h1
-        class="-ml-5 -mb-6 font-acme text-6xl text-purple-50 sm:-ml-0 sm:mb-20 sm:text-6xl sm:font-extrabold sm:text-indigo-50/50"
-      >
+    <div class="absolute right-[9%] top-0">
+      <div class="flex justify-center items-center p-2">
+        <h1
+        class="font-acme text-4xl text-purple-50 sm:text-6xl sm:font-extrabold sm:text-indigo-50/50"
+        >
         Git
       </h1>
+      <GitDraft />
+      <GitPullRequest />
+      <GitMerge />
+      </div>
     </div>
     <div class="absolute bottom-1/3 left-[15%]">
       <h1
@@ -81,7 +85,7 @@ import Docker from "@icons/Docker.astro";
 
  {/* Third level ------------------------------------------------------ */}
     <div
-      class="absolute flex h-[55rem] w-[55rem] animate-spin-115 items-center justify-center rounded-full border-b-2 border-t-2 border-dashed border-purple-200/90"
+      class="absolute flex h-[55rem] w-[55rem] animate-spin-115 items-center justify-center rounded-full border-b-2 border-t-2 border-purple-200/30"
     >
       <div class="absolute h-[39rem] w-[39rem] -rotate-[20deg]">
         <div
@@ -90,7 +94,7 @@ import Docker from "@icons/Docker.astro";
           <NestJS />
         </div>
       </div>
-      <div class="absolute h-[39rem] w-[39rem] -rotate-[40deg] border border-red-300">
+      <div class="absolute h-[39rem] w-[39rem] -rotate-[40deg]">
         <div class="absolute -top-5 -left-5 h-10 w-10 rotate-[40deg]">
           <Docker />
         </div>
@@ -116,16 +120,10 @@ import Docker from "@icons/Docker.astro";
         >
           <AWS />
         </div>
-        {/* GitHub Icons */}
         <div
           class="absolute -left-5 -bottom-5 h-10 w-10 animate-spin-115-back"
         >
             <GitHub2 />
-            <!-- <GitPullRequest />
-            <GitBranch />
-            <GitMerge />
-            <GitDraft /> -->
-
         </div>
       </div>
     </div>

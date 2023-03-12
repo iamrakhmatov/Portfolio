@@ -15,9 +15,8 @@ import NextJS from "@icons/NextJS.astro";
 import AWS from "@icons/AWS.astro";
 import Docker from "@icons/Docker.astro";
 // import Apollo from "@icons/Apollo.astro";
-// import Redux from "@icons/Redux.astro";
-// import Lambda from "@icons/Lambda.astro";
-// import Terraform from "@icons/Terraform.astro";
+import Redux from "@icons/Redux.astro";
+import Serverless from "@icons/Serverless.astro";
 import GitMerge from "@icons/GitMerge.astro";
 import GitPullRequest from "@icons/GitPullRequest.astro";
 import GitDraft from "@icons/GitDraft.astro";
@@ -38,54 +37,56 @@ import GitDraft from "@icons/GitDraft.astro";
     <div class="absolute right-[9%] top-0">
       <div class="flex justify-center items-center p-2">
         <h1
-        class="font-acme text-4xl text-purple-50 sm:text-6xl sm:font-extrabold sm:text-indigo-50/50"
+          class="font-acme text-4xl text-purple-50 sm:text-6xl sm:font-extrabold sm:text-indigo-50/50"
         >
-        Git
-      </h1>
-      <GitDraft />
-      <GitPullRequest />
-      <GitMerge />
+          Git
+        </h1>
+        <GitDraft />
+        <GitPullRequest />
+        <GitMerge />
       </div>
     </div>
     <div class="absolute bottom-1/3 left-[15%]">
+      <h1
+        class="text-center -ml-5 -mb-6 font-acme text-6xl text-purple-50 sm:-ml-0 sm:mb-20 sm:text-5xl sm:font-extrabold sm:text-purple-100/60"
+      >
+        SQL
+      </h1>
+    </div>
+    <div class="absolute bottom-[64%]">
       <h1
         class="-ml-5 -mb-6 font-acme text-6xl text-purple-50 sm:-ml-0 sm:mb-20 sm:text-6xl sm:font-extrabold sm:text-indigo-50/70"
       >
         Full-Stack
       </h1>
     </div>
-    <div class="absolute bottom-2/3">
+    <div class="absolute top-1/2 right-[5%]">
       <h1
-        class="-ml-5 -mb-6 font-acme text-6xl text-purple-50 sm:-ml-0 sm:mb-20 sm:text-5xl sm:font-extrabold sm:text-purple-100/40"
-      >
-        Serverless
-      </h1>
-    </div>
-    <div class="absolute bottom-[60%] left-20">
-      <h1
-        class="-ml-5 -mb-6 font-acme text-6xl text-purple-50 sm:-ml-0 sm:mb-20 sm:text-3xl sm:font-extrabold sm:text-blue-100/40"
+        class="font-acme text-xl text-blue-50 sm:text-4xl sm:font-extrabold sm:text-purple-100/60"
       >
         DevOps
       </h1>
+      <Docker />
     </div>
-    <div class="absolute top-1/2 right-[5%]">
+    <div class="absolute top-16 left-40">
       <h1
-        class="-ml-5 -mb-6 font-acme text-6xl tracking-wider text-purple-50 sm:-ml-0 sm:mb-20 sm:text-4xl sm:font-extrabold sm:text-purple-100/70"
+        class="font-acme text-6xl tracking-wider text-purple-50 sm:text-5xl sm:font-extrabold sm:text-indigo-100/30"
       >
-        Architecture
+        Serverless
       </h1>
+      <Serverless />
     </div>
-    <div class="absolute top-[56%]">
+    <div class="absolute top-[55%]">
       <h1
-        class="font-acme text-6xl tracking-wider text-purple-50 sm:text-4xl sm:font-extrabold sm:text-purple-100/70"
+        class="text-center font-acme text-3xl text-purple-50 sm:text-5xl sm:font-extrabold sm:text-purple-100/80"
       >
         Ecosystem
       </h1>
     </div>
 
- {/* Third level ------------------------------------------------------ */}
+    {/* Third level ------------------------------------------------------ */}
     <div
-      class="absolute flex h-[55rem] w-[55rem] animate-spin-115 items-center justify-center rounded-full border-b-2 border-t-2 border-purple-200/30"
+      class="absolute flex h-[55rem] w-[55rem] animate-spin-115 items-center justify-center rounded-full border-l border-b-2 border-t-2 border-purple-200/30"
     >
       <div class="absolute h-[39rem] w-[39rem] -rotate-[20deg]">
         <div
@@ -95,20 +96,18 @@ import GitDraft from "@icons/GitDraft.astro";
         </div>
       </div>
       <div class="absolute h-[39rem] w-[39rem] -rotate-[40deg]">
-        <div class="absolute -top-5 -left-5 h-10 w-10 rotate-[40deg]">
-          <Docker />
+        <div class="absolute -top-4 -left-4 h-8 w-8 rotate-[40deg]">
+          <Redux />
         </div>
         <div class="absolute -left-6 -bottom-6 h-12 w-12 rotate-[40deg]">
-            <TRPC />
+          <TRPC />
         </div>
       </div>
       <div class="absolute h-[39rem] w-[39rem] rotate-[20deg]">
         <div class="absolute -top-6 -right-6 h-12 w-12 animate-spin-115-back">
           <Postgres />
         </div>
-        <div
-          class="absolute -left-5 -top-5 h-10 w-10 animate-spin-115-back"
-        >
+        <div class="absolute -left-5 -top-5 h-10 w-10 animate-spin-115-back">
           <Tailwind />
         </div>
       </div>
@@ -120,10 +119,8 @@ import GitDraft from "@icons/GitDraft.astro";
         >
           <AWS />
         </div>
-        <div
-          class="absolute -left-5 -bottom-5 h-10 w-10 animate-spin-115-back"
-        >
-            <GitHub2 />
+        <div class="absolute -left-5 -bottom-5 h-10 w-10 animate-spin-115-back">
+          <GitHub2 />
         </div>
       </div>
     </div>
@@ -132,7 +129,7 @@ import GitDraft from "@icons/GitDraft.astro";
       /* Second level circle ----------------------------------------------------------------> */
     }
     <div
-      class="absolute flex h-[38rem] w-[38rem] animate-spin-72 items-center border-dashed justify-center rounded-full border-b-2 border-l border-t-2 border-purple-200/80"
+      class="absolute flex h-[38rem] w-[38rem] animate-spin-72 items-center border-dashed justify-center rounded-full border-b border-r-2 border-t-2 border-purple-200/80"
     >
       <div class="absolute h-[27rem] w-[27rem]">
         <div class="h-full w-full rotate-[55deg]">

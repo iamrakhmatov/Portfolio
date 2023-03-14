@@ -10,8 +10,6 @@
       "@images/*": ["src/images/*"],
       "@icons/*": ["src/icons/*"],
       "@utils/*": ["src/utils/*"]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    }
   }
 }

@@ -36,6 +36,9 @@ module.exports = {
       fontFamily: {
         acme: ["Acme"],
         anonym: ["Anonymous Pro"],
+        expletus: ["Expletus Sans"],
+        frederic: ["Fredericka the Great"],
+        gideon: ["Gideon Roman"],
       },
       colors: {
         primary: {

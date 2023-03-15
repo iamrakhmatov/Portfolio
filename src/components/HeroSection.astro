@@ -18,7 +18,7 @@ import NavBar from "@components/NavBar.astro";
           Hey, my name is
         </h2>
         <h1
-          class="text-3xl font-bold text-gray-600 sm:text-6xl sm:font-extrabold"
+          class="text-3xl font-bold text-gray-600 sm:text-6xl font-frederic w-1/2"
         >
           Shakhruz Rakhmatov.
         </h1>
@@ -26,20 +26,20 @@ import NavBar from "@components/NavBar.astro";
         <div
           class="flex flex-col gap-1 border-l-4 border-purple-300/70 pl-3 sm:flex-row sm:items-center sm:gap-3 sm:border-0 sm:p-0"
         >
-          <h1
-            class="font-sans text-xl font-bold text-gray-400 sm:text-3xl sm:font-extrabold"
-          >
+          <h1 class="font-frederic text-xl text-gray-400 sm:text-4xl">
             Software Engineer
           </h1>
-          <span class="hidden h-8 w-1 bg-slate-600 sm:block"></span>
+          <span class="hidden h-10 w-1 bg-slate-600 sm:block"></span>
           <h1
             class="font-anonym text-lg text-gray-500 sm:mt-1 sm:text-xl sm:tracking-wide"
           >
             Based in Uzbekistan
           </h1>
         </div>
-        <div class="relative mt-6 hidden h-12 w-fit items-center sm:flex">
+
+        <div class="relative mt-12 hidden h-12 w-fit items-center sm:flex">
           <button
+            type="button"
             class="absolute -right-5 h-12 w-12 rounded-full bg-purple-500/20"
           ></button>
           <h1 class="mr-8 font-sans text-sm text-gray-300 sm:block">
@@ -53,10 +53,29 @@ import NavBar from "@components/NavBar.astro";
           </div>
         </div>
       </div>
-      <p class="mt-32 hidden w-2/3 text-gray-400 sm:mt-14 sm:block">
-        Being JavaScript Ecosystem enthusiast and TypeScript Advocate I love
-        developing both the Frontend and Backend sides of the tech stack.
-      </p>
+
+      <div class="hidden w-2/3 sm:block mt-10 relative">
+        <!-- <div
+          class="absolute -bottom-[60%] -left-5 w-[1px] h-[220%] from-slate-50 via-slate-300 to-slate-50 bg-gradient-to-b"
+        >
+        </div>
+        <div
+          class="absolute -bottom-[60%] -right-5 w-[1px] h-[220%] from-slate-50 via-slate-300 to-slate-50 bg-gradient-to-b"
+        >
+        </div>
+        <div
+          class="absolute -right-[20%] -top-5 h-[1px] w-[140%] from-slate-50 via-slate-300 to-slate-50 bg-gradient-to-r"
+        >
+        </div>
+        <div
+          class="absolute -right-[20%] -bottom-5 h-[1px] w-[140%] from-slate-50 via-slate-300 to-slate-50 bg-gradient-to-r"
+        >
+        </div> -->
+        <p class="text-gray-400 font-gideon">
+          Being JavaScript Ecosystem enthusiast and TypeScript Advocate I love
+          developing both the Frontend and Backend sides of the tech stack.
+        </p>
+      </div>
 
       <p class="pr-10 text-gray-400 sm:hidden">
         I'm a Full-Stack Engineer, who loves JavaScript{" "}

@@ -1,5 +1,6 @@
 ---
 import NavBar from "@components/NavBar.astro";
+import Circle from "./Circle.astro";
 ---
 
 <section class="relative z-10 flex h-screen w-full bg-white" id="about">
@@ -31,7 +32,7 @@ import NavBar from "@components/NavBar.astro";
           </h1>
           <span class="hidden h-10 w-1 bg-slate-600 sm:block"></span>
           <h1
-            class="font-anonym text-lg text-gray-500 sm:mt-1 sm:text-xl sm:tracking-wide"
+            class="font-expletus text-lg text-gray-500 sm:mt-1 sm:text-xl sm:tracking-wide"
           >
             Based in Uzbekistan
           </h1>
@@ -68,9 +69,9 @@ import NavBar from "@components/NavBar.astro";
     </div>
   </div>
   <div
-    class="h-full w-full bg-cover bg-bottom sm:w-[43.5%]"
-    style="background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2836&q=80)"
+    class="w-[43.5%] overflow-hidden "
   >
+  <Circle />
   </div>
 
   {/* Email Address */}

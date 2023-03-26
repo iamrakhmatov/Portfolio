@@ -1,11 +1,12 @@
 ---
 import NavBar from "@components/NavBar.astro";
-import Circle from "./Circle.astro";
+import PositionsCircle from "./Positions.astro";
+import BlogButton from "./button/Blog.astro";
 ---
 
 <section class="relative z-10 flex h-screen w-full bg-white" id="about">
   <h1
-    class="absolute left-0 bottom-0 font-frederic text-6xl text-purple-50 sm:-ml-16 sm:-mb-44 sm:text-[18rem] sm:text-purple-50"
+    class="absolute left-0 bottom-0 font-frederic text-6xl text-purple-50 sm:-ml-16 sm:-mb-40 sm:text-[18rem] sm:text-purple-50"
   >
     <span class="-ml-5 -mb-6"> Skills</span>
   </h1>
@@ -39,19 +40,14 @@ import Circle from "./Circle.astro";
         </div>
 
         <div class="relative mt-12 hidden h-12 w-fit items-center sm:flex">
-          <button
-            type="button"
-            class="absolute -right-5 h-12 w-12 rounded-full bg-purple-500/20"
-          ></button>
           <h1 class="mr-8 text-sm text-gray-400 sm:block font-expletus">
-            I write about <b class="underline decoration-wavy underline-offset-2 decoration-purple-500">JavaScript</b>,{" "}
-            <span class="text-purple-300">check it out</span>
+            Check out my <b
+              class="underline text-gray-500 decoration-wavy underline-offset-2 decoration-purple-500"
+              >Tech</b
+            >{" "}
+            <span class="text-purple-300">blog</span>
           </h1>
-          <div class="h-0.5 w-20 border-b-2 border-gray-400/70"></div>
-          <div
-            class="h-0 w-0 border-t-4 border-b-4 border-l-4 border-t-transparent border-b-transparent border-l-gray-400/70"
-          >
-          </div>
+          <BlogButton />
         </div>
       </div>
 
@@ -68,10 +64,8 @@ import Circle from "./Circle.astro";
       </p>
     </div>
   </div>
-  <div
-    class="w-[43.5%] overflow-hidden "
-  >
-  <Circle />
+  <div class="w-[43.5%] overflow-hidden">
+    <PositionsCircle />
   </div>
 
   {/* Email Address */}

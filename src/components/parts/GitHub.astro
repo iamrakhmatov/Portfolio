@@ -1,0 +1,131 @@
+---
+import GitBranch from "@icons/GitBranch.astro";
+import GitDraft from "@icons/GitDraft.astro";
+import GitHub from "@icons/GitHub.astro";
+import GitMerge from "@icons/GitMerge.astro";
+import GitPullRequest from "@icons/GitPullRequest.astro";
+
+const { className } = Astro.props;
+---
+
+<!-- GITHUB First circle -->
+<div
+  class:list={[
+    "w-[26rem] h-[26rem] flex border-2 border-dashed border-slate-100/80 items-center justify-center rounded-full relative",
+    className,
+  ]}
+>
+  <div
+    class:list={[
+      "w-[23rem] h-[23rem] border border-slate-200/30 absolute rounded-full",
+      className,
+    ]}
+  >
+  </div>
+  <div class="w-[260px] h-[260px] absolute z-10 animate-spin-115">
+    <div
+      class="absolute w-7 h-7 -right-[14px] -top-[14px] animate-spin-115-back"
+    >
+      <GitDraft className="fill-red-200 z-10 absolute w-full h-full" />
+    </div>
+    <div class="absolute w-8 h-8 -left-4 -top-4 animate-spin-115-back">
+      <GitMerge className="opacity-70 w-full h-full" />
+    </div>
+    <div
+      class="absolute w-8 h-8 -right-[18px] -bottom-[18px] animate-spin-115-back"
+    >
+      <GitBranch className="opacity-30 w-full h-full" />
+    </div>
+    <div
+      class="absolute w-7 h-7 -left-[14px] -bottom-[14px] animate-spin-115-back"
+    >
+      <GitPullRequest className="fill-indigo-300/60 w-full h-full" />
+    </div>
+  </div>
+  <!-- GitHub Starts -->
+  <div
+    class="relative w-64 h-64 border bg-white rounded-full border-slate-100/60 flex items-center justify-center"
+  >
+    <!-- Gradient Lines -->
+    <div
+      class="absolute right-full h-[26rem] w-[1px] bg-gradient-to-b from-white via-slate-200"
+    >
+    </div>
+    <div
+      class="absolute left-full h-[26rem] w-[1px] bg-gradient-to-b from-white via-slate-200"
+    >
+    </div>
+    <div
+      class="absolute bottom-full w-[26rem] h-[1px] bg-gradient-to-r from-white via-slate-200"
+    >
+    </div>
+    <div
+      class="absolute top-full w-[26rem] h-[1px] bg-gradient-to-r from-white via-slate-200"
+    >
+    </div>
+    <!-- Second circle -->
+    <div
+      class="relative w-56 h-56 border left-0 top-0 border-slate-200/30 rounded-full flex bg-slate-50/50 items-center justify-center"
+    >
+      <!-- Gradient Lines -->
+      <div
+        class="absolute right-full h-96 w-[1px] bg-gradient-to-b from-white via-slate-200"
+      >
+      </div>
+      <div
+        class="absolute left-full h-96 w-[1px] bg-gradient-to-b from-white via-slate-200"
+      >
+      </div>
+      <div
+        class="absolute bottom-full w-96 h-[1px] bg-gradient-to-r from-white via-slate-200"
+      >
+      </div>
+      <div
+        class="absolute top-full w-96 h-[1px] bg-gradient-to-r from-white via-slate-200"
+      >
+      </div>
+      <!-- Third circle -->
+      <div
+        class="w-40 h-40 border left-0 top-0 border-slate-200/40 rounded-full bg-white flex items-center justify-center"
+      >
+        <!-- Square -->
+        <div
+          class="relative w-28 h-28 left-0 top-0 flex border-t-slate-50 border-b-slate-50 items-center justify-center"
+        >
+          <!-- Gradient Lines -->
+          <div
+            class="absolute right-full h-[40rem] w-[1px] bg-gradient-to-b from-white via-slate-200/60"
+          >
+          </div>
+          <div
+            class="absolute left-full h-[40rem] w-[1px] bg-gradient-to-b from-white via-slate-200/60"
+          >
+          </div>
+          <div
+            class="absolute bottom-full w-[40rem] h-[1px] bg-gradient-to-r from-white via-slate-200/60"
+          >
+          </div>
+          <div
+            class="absolute top-full w-[40rem] h-[1px] bg-gradient-to-r from-white via-slate-200/60"
+          >
+          </div>
+          <!-- Inner circle -->
+          <div
+            class="relative w-28 h-28 border left-0 top-0 border-slate-100/70 border-t-slate-50/70 flex items-center justify-center rounded-full"
+          >
+            <GitHub className="w-24 h-24 fill-slate-200" />
+            <!-- Diagonal Gradient Lines -->
+            <div
+              class="absolute h-[50rem] w-[1px] bg-gradient-to-b rotate-45 from-white via-slate-200/70"
+            >
+            </div>
+            <div
+              class="absolute h-[50rem] w-[1px] bg-gradient-to-b -rotate-45 from-white via-slate-200/70"
+            >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

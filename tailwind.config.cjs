@@ -41,7 +41,7 @@ module.exports = {
         gideon: ["Gideon Roman"],
       },
       colors: {
-        kelp: {
+        green: {
           '50': '#f5f9f4',
           '100': '#e9f2e6',
           '200': '#d4e4ce',

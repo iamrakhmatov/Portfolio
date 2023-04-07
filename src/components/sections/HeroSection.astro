@@ -1,82 +1,148 @@
 ---
-import NavBar from "../parts/NavBar.astro";
 import BlogButton from "../button/Blog.astro";
 ---
 
-<section class="relative z-10 flex h-screen w-full bg-white" id="about">
-  <h1
-    class="absolute left-0 bottom-0 font-frederic text-6xl text-purple-50 sm:-ml-16 sm:-mb-40 sm:text-[18rem] sm:text-purple-100/70"
-  >
-    <span class="-ml-5 -mb-6"> Skills</span>
-  </h1>
-
-  <div
-    class="absolute flex h-full w-full overflow-hidden pt-14 pb-12 pl-20 font-serif leading-relaxed text-gray-700 sm:relative sm:w-[56.5%] sm:items-center sm:py-0 sm:pl-48"
-  >
-    <div class="flex flex-col justify-between py-20 sm:block">
-      <div>
-        <h2 class="mb-3 text-purple-400/70 font-gideon">Hey, my name is</h2>
-        <h1
-          class="text-3xl font-bold text-gray-600 sm:text-6xl font-frederic w-1/2"
-        >
-          Shakhruz Rakhmatov.
-        </h1>
-        <br />
+<section class="flex flex-col w-full bg-[#efece8]" id="about">
+  <div class="h-screen w-full flex relative selection:bg-green-200">
+    <!-- LEFT SIDE -->
+    <div class="w-[57%] absolute h-full left-0 top-0">
+      <!-- Dashed half circle -->
+      <div class="absolute left-6 top-8 w-20 h-20">
         <div
-          class="flex flex-col gap-1 border-l-4 border-purple-300/70 pl-3 sm:flex-row sm:items-center sm:gap-3 sm:border-0 sm:p-0"
+          class="w-full h-full border border-green-300 rounded-full border-dashed"
         >
-          <h1 class="font-frederic text-xl text-gray-400 sm:text-4xl">
-            Software Engineer
-          </h1>
-          <span class="hidden h-10 w-1 bg-slate-600 sm:block"></span>
-          <h1
-            class="font-expletus text-lg text-gray-500 sm:mt-1 sm:text-xl sm:tracking-wide"
+        </div>
+        <div class="w-1/2 h-1/2 absolute right-0 bottom-0 bg-[#efece8]"></div>
+      </div>
+      <div class="absolute h-20 left-0 top-0 flex w-full items-end">
+        <div class="w-full flex items-center">
+          <span class="h-2 w-full border-t border-green-300 border-dashed"
+          ></span>
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT SIDE -->
+    <div
+      class="w-[43%] bg-green-900 overflow-hidden flex items-center justify-center absolute right-0 top-0 h-full"
+    >
+      <!-- Dashed half circle -->
+      <div class="absolute right-6 top-8 w-20 h-20">
+        <div
+          class="w-full h-full border border-green-700 rounded-full border-dashed"
+        >
+        </div>
+        <div class="w-1/2 h-1/2 absolute left-0 bottom-0 bg-green-900"></div>
+      </div>
+      <!-- Navigation -->
+      <div class="absolute top-0 left-8 flex w-full items-end h-20 z-10">
+        <div class="flex w-full items-center justify-end gap-8">
+          <div
+            class="flex gap-8 font-expletus tracking-wider text-[#efece8] sm:gap-10 text-sm"
           >
-            Based in Uzbekistan
-          </h1>
-        </div>
-
-        <div class="relative mt-12 hidden h-12 w-fit items-center sm:flex">
-          <h1 class="mr-8 text-sm text-gray-400 sm:block font-expletus">
-            Check out my <b
-              class="underline text-gray-500 decoration-wavy underline-offset-2 decoration-purple-500"
-              >Tech</b
-            >{" "}
-            <span class="text-purple-300">blog</span>
-          </h1>
-          <BlogButton />
+            <a class="hover:text-green-300" href="#skills">Skills</a>
+            <a class="hover:text-green-300" href="#career">Career</a>
+            <a class="hover:text-green-300" href="#contact">Contact</a>
+          </div>
+          <span class="h-1 w-full border-b border-green-700 border-dashed"
+          ></span>
         </div>
       </div>
+    </div>
 
-      <div class="hidden w-2/3 sm:block mt-10 relative">
-        <p class="text-gray-400 font-gideon">
-          I am a JavaScript enthusiast and TypeScript advocate. <br /> People call
-          me a Full-Stack developer, because I can break both Frontend & Backend.
-        </p>
+    <!-- ABOUT ME -->
+    <div class="w-full h-full relative">
+      <div class="flex h-full max-w-6xl mx-auto justify-between">
+        <div class="flex flex-col justify-center">
+          <h2 class="mb-3 text-green-500 font-expletus">Hey, my name is</h2>
+          <h1
+            class="text-3xl font-bold text-green-700 sm:text-6xl font-frederic w-1/2"
+          >
+            Shakhruz Rakhmatov.
+          </h1>
+          <br />
+          <div
+            class="flex flex-col gap-1 border-l-4 border-purple-300/70 pl-3 sm:flex-row sm:items-center sm:gap-3 sm:border-0 sm:p-0"
+          >
+            <h1 class="font-frederic text-xl text-green-400 sm:text-4xl">
+              Software Engineer
+            </h1>
+            <span class="hidden h-10 w-1 bg-green-600 sm:block"></span>
+            <h1
+              class="font-expletus selection:text-green-500 text-xl text-gray-500 sm:mt-1 sm:text-xl sm:tracking-wide"
+            >
+              Based in Uzbekistan
+            </h1>
+          </div>
+
+          <div class="hidden w-2/3 sm:block mt-10 relative">
+            <p
+              class="text-gray-500 font-expletus selection:text-green-500 text-sm"
+            >
+              I am a JavaScript enthusiast and TypeScript advocate. <br /> People
+              call me a Full-Stack developer, because I can break both Frontend &
+              Backend.
+            </p>
+          </div>
+
+          <p class="pr-10 text-gray-400 sm:hidden">
+            I'm a Full-Stack Engineer, who loves JavaScript{" "}
+            <span class="text-purple-300">&</span> TypeScript.
+          </p>
+          <div class="relative mt-12 hidden h-12 w-fit items-center sm:flex">
+            <h1
+              class="mr-8 text-sm text-gray-500 sm:block font-expletus selection:text-green-500"
+            >
+              Check out my <b
+                class="underline text-gray-600 decoration-wavy underline-offset-2 decoration-green-500"
+                >Tech</b
+              >{" "}
+              <span class="text-green-500">blog</span>
+            </h1>
+            <BlogButton />
+          </div>
+        </div>
+        <!-- TWO Circles -->
+        <div class="flex items-center">
+          <div class="w-48 h-48 bg-[#efece8] rounded-full translate-x-12"></div>
+          <div
+            class="w-48 h-48 border-2 border-green-700 border-dashed rounded-full -translate-x-12"
+          >
+          </div>
+        </div>
       </div>
-
-      <p class="pr-10 text-gray-400 sm:hidden">
-        I'm a Full-Stack Engineer, who loves JavaScript{" "}
-        <span class="text-purple-300">&</span> TypeScript.
-      </p>
     </div>
   </div>
-  <div class="w-[43.5%] overflow-hidden">
-    <!-- <AnimatingCircle /> -->
-  </div>
 
-  {/* Email Address */}
-  <div
-    class="absolute bottom-0 left-0 h-16 w-full pr-8 pt-2 sm:block sm:h-20 sm:pr-16"
-  >
-    <div class="flex items-center justify-end gap-6 sm:gap-8">
-      <div class="mt-1 w-full border-t border-gray-300/30"></div>
-      <p
-        class="cursor-text font-expletus text-xs tracking-widest text-gray-400/70 hover:text-purple-300 sm:text-sm"
+  <div class="h-36 w-full mx-auto flex items-end bg-green-900 relative">
+    <!-- Bottom Right Half Circle -->
+    <div class="absolute right-6 bottom-8 w-20 h-20">
+      <div
+        class="w-full h-full border border-green-700 rounded-full border-dashed"
       >
-        iamrakhmatov@gmail.com
-      </p>
+      </div>
+      <div class="w-1/2 h-1/2 absolute left-0 top-0 bg-green-900"></div>
     </div>
+    <!-- Bottom Dashed Line -->
+    <div class="w-full h-[72px] border-t border-green-700 border-dashed"></div>
   </div>
-  <NavBar />
+  <!-- Dashed Line on the RIGHT side -->
+  <div class="absolute inset-x-16 border-r border-green-700 border-dashed">
+    <div class="h-screen"></div>
+    <div class="h-36"></div>
+  </div>
 </section>
+
+{/* Email Address */}
+<!-- <div
+  class="absolute bottom-0 left-0 h-16 w-full pr-8 pt-2 sm:block sm:h-20 sm:pr-16"
+>
+  <div class="flex items-center justify-end gap-6 sm:gap-8">
+    <div class="mt-1 w-full border-t border-green-300 border-dashed"></div>
+    <p
+      class="cursor-text font-expletus text-xs selection:text-green-500 tracking-widest text-[#efece8] hover:text-green-400 sm:text-sm"
+    >
+      iamrakhmatov@gmail.com
+    </p>
+  </div>
+</div> -->
+<!-- <NavBar /> -->

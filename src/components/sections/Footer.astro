@@ -2,38 +2,56 @@
 import ArrowUp from "@icons/ArrowUp.astro";
 ---
 
-<section id="contact" class="flex flex-col justify-end py-4 relative h-[700px]">
-  <p
-    class="uppercase bg-gradient-to-r from-slate-200 to-purple-100 text-transparent bg-clip-text text-[10rem] font-frederic right-1/3 absolute top-0"
-  >
-    get in
-  </p>
-  <p
-    class="absolute bg-gradient-to-r to-slate-200 from-purple-100 text-transparent bg-clip-text left-1/3 top-40 uppercase text-[10rem] font-frederic"
-  >
-    touch
-  </p>
+<section
+  id="contact"
+  class="flex flex-col justify-end pb-4 h-[800px] max-w-5xl mx-auto"
+>
+  <div class="relative w-full h-1/2 leading-none">
+    <p
+      class="uppercase bg-gradient-to-r from-slate-200 to-purple-100 text-transparent bg-clip-text text-[10rem] font-frederic right-1/3 absolute top-0"
+    >
+      get in
+    </p>
+    <p
+      class="absolute bg-gradient-to-r to-slate-200 from-purple-100 text-transparent bg-clip-text left-1/3 top-40 uppercase text-[10rem] font-frederic"
+    >
+      touch
+    </p>
+  </div>
 
   <div
-    class="h-full w-full flex flex-col items-center justify-end relative px-24 pb-24 text-lg font-gideon"
+    class="w-full flex flex-col items-center justify-end relative px-24 text-sm font-gideon"
   >
-    <p class="text-gray-400/90 text-center text-sm">
+    <p class="text-gray-400/90 text-center">
       Although, I am currently busy with projects, <br />
       I would love to face new opportunities and challenges. <br />
       If you have ambitious startups or big projects, I am always open for discussion!
     </p>
-    <p class="mt-5 text-gray-400 text-sm font-semibold">Reach me on social media or through email.</p>
+    <p class="text-gray-400">Reach me on social media or through email.</p>
+    <div class="flex h-24 w-24 items-center justify-center mt-10">
+      <div class="group relative">
+        <div
+          class="absolute -inset-0.5 rounded-full animate-tilt bg-gradient-to-br from-yellow-600 to-purple-600 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"
+        >
+        </div>
+        <div
+          class="h-24 w-24 bg-cover bg-center relative rounded-full"
+          style="background-image: url(https://images.unsplash.com/photo-1589254066007-898d52d910d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)"
+        >
+        </div>
+      </div>
+    </div>
   </div>
 
   <div
-    class="flex flex-col justify-center items-center font-expletus text-purple-400 text-xs tracking-wider [word-spacing:2px]"
+    class="flex flex-col pt-24 justify-center items-center font-expletus text-purple-400 tracking-wider [word-spacing:2px]"
   >
-    <p
-      class="bg-gradient-to-r from-gray-500 to-purple-400 text-transparent bg-clip-text"
+    <h1
+      class="bg-gradient-to-r text-xs from-gray-500 to-purple-400 text-transparent bg-clip-text"
     >
-      Designed <i>&</i> Build by Shakhruz Rakhmatov
+      Designed <i class="text-[11px]">&</i> Build by Shakhruz Rakhmatov
       <br />
-    </p>
+    </h1>
     <div class="flex items-center space-x-1.5 mt-2">
       <a href="https://astro.build/" target="_blank">
         <svg

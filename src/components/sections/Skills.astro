@@ -9,26 +9,73 @@ import TypeScript from "@components/parts/TypeScript.astro";
 import Bubble from "@icons/Bubble.astro";
 ---
 
-<section class="py-48 max-w-5xl mx-auto" id="skills">
-  <JavaScriptEcosystem />
-  <div class="w-full flex flex-col mt-28">
-    <div class="flex justify-between items-center">
+<section class="pt-64 max-w-5xl mx-auto" id="skills">
+  <div class="relative flex items-center justify-center">
+    <JavaScriptEcosystem />
+    <h1
+      class="absolute text-7xl font-frederic py-2 bottom-20 bg-gradient-to-r from-purple-200/60 to-indigo-200/60 text-transparent bg-clip-text"
+    >
+      Ecosystem
+    </h1>
+    <p
+      class="absolute text-sm text-slate-400/70 font-gideon bottom-6 w-96 text-center"
+    >
+      I'm in love with JavaScript Ecosystem and its Community driven Open Source
+      Softwares.
+    </p>
+  </div>
+  <div class="w-full flex flex-col mt-36 items-center gap-16">
+    <div
+      class="flex relative justify-between items-center w-full border-slate-100 rounded-l-lg"
+    >
+      <div
+        class="w-10 h-10 absolute right-0 top-0 border-t border-r border-[#3178c6]/30"
+      >
+      </div>
+      <div
+        class="w-10 h-10 absolute right-0 bottom-0 border-b border-r border-[#3178c6]/30"
+      >
+      </div>
+
       <TypeScript />
+      <div class="w-[30rem] flex flex-col gap-10">
+        <h1 class="text-6xl font-frederic text-[#3178c6]/25">TypeScript</h1>
+        <p class="text-gray-400/80 text-sm font-gideon">
+          TypeScript being superset of JavaScript provides us with handful
+          utilities and features to improve developer experience. <br />
+          <br /> TypeScript’s ability to catch errors at compile time, allows me
+          to better write my code and provides fantastic DX during development process.
+        </p>
+      </div>
+    </div>
+    <!-- GitHub -->
+    <div class="flex justify-between items-center w-full">
+      <div class="w-[30rem] flex flex-col gap-10 items-end">
+        <h1 class="text-6xl font-frederic text-slate-300/80">GitHub</h1>
+        <p class="text-gray-400/90 text-sm font-gideon text-right">
+          Since the start of my professional career I use GitHub which allows me
+          to host my code and share with fellow developers as well as gives me
+          one of the best distributed version control tools out there “Git”, to
+          track changes on my code.
+        </p>
+      </div>
       <GitHub />
     </div>
-    <!-- <div class="flex justify-end items-center -mt-12 gap-x-40">
-      <h1 class="text-6xl font-frederic text-slate-200">GitHub</h1>
-      <h1 class="text-6xl font-frederic text-[#3178c6]/20">TypeScript</h1>
-    </div> -->
-  </div>
-  <div class="mt-28 flex items-center justify-center">
-    <Bubble className="w-[35rem] h-[35rem]" />
-    <div
-      class="absolute text-3xl ml-5 font-frederic text-slate-400 flex items-center flex-col"
-    >
-      <h1>Cloud</h1>
-      <span class="text-2xl text-slate-400/60">&</span>
-      <h1>Database</h1>
+    <!-- Bubble Infographic -->
+    <div class="flex w-full items-center justify-between">
+      <Bubble className="w-[30rem] h-[30rem]" />
+      <div class="w-[30rem] flex flex-col gap-10 items-end">
+        <h1
+          class="text-5xl w-full font-frederic bg-gradient-to-r from-purple-200/80 to-slate-400/80 text-transparent bg-clip-text"
+        >
+          Cloud <span class="text-4xl">&</span> Database
+        </h1>
+        <p class="text-gray-400/90 text-sm relative z-10 font-gideon">
+          I wouldn’t call myself a Database architect or Serverless expert,
+          though I had both theoretical and practical experience with the
+          following technologies.
+        </p>
+      </div>
     </div>
   </div>
 </section>

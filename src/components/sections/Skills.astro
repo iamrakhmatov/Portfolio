@@ -5,73 +5,112 @@ import TypeScript from "@components/parts/TypeScript.astro";
 import Bubble from "@icons/Bubble.astro";
 ---
 
-<section class="bg-[#efece8]" id="skills">
-  <div class="max-w-5xl mx-auto py-32">
-    <div class="relative flex items-center justify-center">
+<section class="overflow-hidden bg-[#efece8]" id="skills">
+  <div class="mx-auto max-w-5xl sm:py-32">
+    <!-- Gradient line before section title -->
+    <div class="relative flex flex-col items-center justify-center">
       <h1
-        class="absolute text-7xl font-frederic py-2 top-0 bg-gradient-to-r from-green-300 to-gray-400 text-transparent bg-clip-text"
+        class="bg-gradient-to-r from-green-300 to-gray-400 bg-clip-text py-2 font-frederic text-6xl text-transparent sm:absolute sm:top-0 sm:text-7xl"
       >
         Ecosystem
       </h1>
+      <div class="relative my-6 flex w-full items-center justify-center">
+        <div
+          class="h-[1px] w-48 bg-gradient-to-r from-[#efece8] via-green-400 to-[#efece8]"
+        >
+        </div>
+        <div class="absolute h-1.5 w-1.5 rounded-full bg-green-500"></div>
+        <div class="absolute h-3 w-3 rounded-full border border-green-300">
+        </div>
+      </div>
       <p
-        class="absolute text-sm text-gray-500/70 font-gideon top-24 w-96 text-center"
+        class="w-96 px-10 text-center font-gideon text-sm text-gray-500/70 sm:absolute sm:top-24 sm:px-0"
       >
         I'm in love with JavaScript Ecosystem and its Community driven Open
         Source Softwares.
       </p>
-      <JavaScriptEcosystem />
+      <!-- <JavaScriptEcosystem /> -->
     </div>
   </div>
-  <div class="bg-white border-y-2 border-gray-300">
-    <div class="max-w-5xl mx-auto py-32">
-      <div class="w-full flex flex-col items-center gap-16">
+  <div class="border-y-2 border-gray-300 bg-white">
+    <div class="mx-auto max-w-5xl py-32">
+      <div class="flex w-full flex-col items-center gap-16">
+        <!-- TypeScript -->
         <div
-          class="flex relative justify-between items-center w-full border-slate-100 rounded-l-lg"
+          class="relative flex w-full flex-col-reverse items-center justify-between rounded-l-lg border-slate-100 sm:flex-row"
         >
           <div
-            class="w-10 h-10 absolute right-0 top-0 border-dashed border-t border-r border-[#3178c6]/30"
+            class="absolute right-0 top-0 hidden h-10 w-10 border-t border-r border-dashed border-[#3178c6]/30 sm:block"
           >
           </div>
           <div
-            class="w-10 h-10 absolute right-0 bottom-0 border-dashed border-b border-r border-[#3178c6]/30"
+            class="absolute right-0 bottom-0 hidden h-10 w-10 border-b border-r border-dashed border-[#3178c6]/30 sm:block"
           >
           </div>
 
           <TypeScript />
-          <div class="w-[30rem] flex flex-col gap-10">
-            <h1 class="text-6xl font-frederic text-[#3178c6]/40">TypeScript</h1>
-            <p class="text-gray-400/80 text-sm font-gideon">
+          <div
+            class="mb-10 flex flex-col items-center gap-10 sm:mb-0 sm:w-[30rem] sm:items-start"
+          >
+            <h1 class="font-frederic text-5xl text-[#3178c6]/40 sm:text-6xl">
+              TypeScript
+            </h1>
+            <p class="hidden font-gideon text-sm text-gray-400/80 sm:block">
               TypeScript being superset of JavaScript provides us with handful
               utilities and features to improve developer experience. <br />
               <br /> TypeScript’s ability to catch errors at compile time, allows
               me to better write my code and provides fantastic DX during development
               process.
             </p>
+            <p
+              class="px-10 text-center font-gideon text-sm text-gray-400/80 sm:hidden"
+            >
+              TypeScript being superset of JavaScript provides us with handful
+              utilities and features to improve developer experience.
+            </p>
           </div>
         </div>
         <!-- GitHub -->
-        <div class="flex justify-between items-center w-full">
-          <div class="w-[30rem] flex flex-col gap-10 items-end">
-            <h1 class="text-6xl font-frederic text-slate-400/80">GitHub</h1>
-            <p class="text-gray-400/90 text-sm font-gideon text-right">
+        <div
+          class="flex w-full flex-col items-center justify-between sm:flex-row"
+        >
+          <div
+            class="flex flex-col items-center gap-10 sm:w-[30rem] sm:items-end"
+          >
+            <h1 class="font-frederic text-5xl text-slate-400/80 sm:text-6xl">
+              GitHub
+            </h1>
+            <p
+              class="hidden text-right font-gideon text-sm text-gray-400/90 sm:block"
+            >
               Since the start of my professional career I use GitHub which
               allows me to host my code and share with fellow developers as well
               as gives me one of the best distributed version control tools out
               there “Git”, to track changes on my code.
             </p>
+            <p
+              class="px-10 text-center font-gideon text-sm text-gray-400/90 sm:hidden"
+            >
+              Git & GitHub became the tools I use on a daily basis both for the
+              projects at work and side projects.
+            </p>
           </div>
           <GitHub />
         </div>
         <!-- Bubble Infographic -->
-        <div class="flex w-full items-center justify-between">
-          <Bubble className="w-[30rem] h-[30rem]" />
-          <div class="w-[30rem] flex flex-col gap-10 items-end">
+        <div
+          class="flex w-full flex-col-reverse items-center justify-between px-7 sm:flex-row sm:px-0"
+        >
+          <Bubble className="sm:w-[30rem] sm:h-[30rem]" />
+          <div
+            class="mb-10 flex flex-col items-end gap-10 text-center sm:mb-0 sm:w-[30rem] sm:text-left"
+          >
             <h1
-              class="text-5xl w-full font-frederic bg-gradient-to-r from-green-300 to-slate-500 text-transparent bg-clip-text"
+              class="w-full bg-gradient-to-r from-green-300 to-slate-500 bg-clip-text font-frederic text-5xl text-transparent"
             >
-              Cloud <span class="text-4xl">&</span> Database
+              Cloud <span class="text-2xl sm:text-4xl">&</span> Database
             </h1>
-            <p class="text-gray-400/90 text-sm relative z-10 font-gideon">
+            <p class="relative z-10 font-gideon text-sm text-gray-400/90">
               I wouldn’t call myself a Database architect or Serverless expert,
               though I had both theoretical and practical experience with the
               following technologies.

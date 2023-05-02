@@ -3,75 +3,80 @@ import Shape from "@icons/Shape.astro";
 import BlogButton from "../button/Blog.astro";
 ---
 
-<section class="flex flex-col w-full bg-[#efece8]" id="about">
-  <div class="h-screen w-full flex relative selection:bg-green-200">
+<section class="flex w-full flex-col bg-[#efece8]" id="about">
+  <div
+    class="relative flex h-screen w-full overflow-hidden selection:bg-green-200"
+  >
     <!-- LEFT SIDE -->
-    <div class="sm:w-[57%] absolute h-full w-full left-0 top-0 hidden sm:block">
+    <div class="absolute left-0 top-0 hidden h-full w-full sm:block sm:w-[57%]">
       <!-- Dashed half circle -->
-      <div class="absolute left-6 top-8 w-20 h-20">
+      <div class="absolute left-6 top-8 h-20 w-20">
         <div
-          class="w-full h-full border border-green-300 rounded-full border-dashed"
+          class="h-full w-full rounded-full border border-dashed border-green-300"
         >
         </div>
-        <div class="w-1/2 h-1/2 absolute right-0 bottom-0 bg-[#efece8]"></div>
+        <div class="absolute right-0 bottom-0 h-1/2 w-1/2 bg-[#efece8]"></div>
       </div>
-      <div class="absolute h-20 left-0 top-0 flex w-full items-end">
-        <div class="w-full flex items-center">
-          <span class="h-2 w-full border-t border-green-300 border-dashed"
+      <div class="absolute left-0 top-0 flex h-20 w-full items-end">
+        <div class="flex w-full items-center">
+          <span class="h-2 w-full border-t border-dashed border-green-300"
           ></span>
         </div>
       </div>
     </div>
     <!-- GREEN SIDE -->
     <div
-      class="sm:w-[43%] bg-green-900 overflow-hidden flex items-center justify-center absolute right-0 top-0 sm:h-full h-2/3 w-full"
+      class="absolute right-0 top-0 flex h-2/3 w-full items-center justify-center bg-green-900 sm:h-full sm:w-[43%]"
     >
       <!-- Dashed half circle -->
-      <div class="absolute right-6 top-8 w-20 h-20 hidden sm:block">
+      <div class="absolute right-6 top-8 hidden h-20 w-20 sm:block">
         <div
-          class="w-full h-full border border-green-700 rounded-full border-dashed"
+          class="h-full w-full rounded-full border border-dashed border-green-700"
         >
         </div>
-        <div class="w-1/2 h-1/2 absolute left-0 bottom-0 bg-green-900"></div>
+        <div class="absolute left-0 bottom-0 h-1/2 w-1/2 bg-green-900"></div>
       </div>
-      <!-- Left dashed border on mobile screen -->
       <!-- Navigation -->
-      <div class="absolute top-0 left-8 flex w-full items-end h-20 z-10">
+      <div class="absolute top-0 left-8 z-10 flex h-20 w-full items-end">
         <div class="flex w-full items-center justify-end gap-8">
           <div
-            class="flex gap-8 font-farro tracking-wider text-[#efece8] sm:gap-10 text-sm sm:text-xs"
+            class="flex gap-8 font-farro text-sm tracking-wider text-[#efece8] sm:gap-10 sm:text-xs"
           >
             <a class="hover:text-green-300" href="#skills">Skills</a>
             <a class="hover:text-green-300" href="#career">Career</a>
             <a class="hover:text-green-300" href="#contact">Contact</a>
           </div>
-          <span class="h-1 w-full border-b border-green-700 border-dashed"
+          <span class="h-1 w-full border-b border-dashed border-green-700"
           ></span>
         </div>
       </div>
+      <!-- Two Dotted Lines -->
+      <span
+        class="absolute left-0 bottom-20 h-1 w-2/3 border-b border-dashed border-green-700 sm:hidden"
+      ></span>
     </div>
 
     <!-- ABOUT ME -->
-    <div class="w-full h-full relative">
+    <div class="relative h-full w-full">
       <div
-        class="flex sm:flex-row flex-col h-full max-w-6xl mx-auto justify-between"
+        class="mx-auto flex h-full max-w-6xl flex-col justify-between sm:flex-row"
       >
         <div
-          class="flex flex-col justify-between pb-28 pt-52 sm:py-0 sm:justify-center sm:h-auto h-full sm:px-0 px-8"
+          class="flex h-full flex-col justify-between px-8 pb-36 pt-48 sm:h-auto sm:justify-center sm:py-0 sm:px-0"
         >
           <div>
             <h2
-              class="mb-3 text-green-400 sm:text-green-500 text-lg font-expletus"
+              class="mb-3 font-expletus text-lg text-green-400 sm:text-green-500"
             >
               Hey, my name is
             </h2>
             <h1
-              class="text-5xl font-bold text-[#efece8] sm:text-green-700 sm:text-6xl font-frederic w-1/2"
+              class="w-1/2 font-frederic text-5xl font-bold text-[#efece8] sm:text-6xl sm:text-green-700"
             >
               Shakhruz Rakhmatov.
             </h1>
             <br />
-            <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
               <h1
                 class="font-frederic text-4xl text-green-600 sm:text-green-400"
               >
@@ -79,16 +84,16 @@ import BlogButton from "../button/Blog.astro";
               </h1>
               <span class="hidden h-10 w-1 bg-green-600 sm:block"></span>
               <h1
-                class="font-expletus selection:text-green-500 text-2xl text-[#efece8] sm:text-gray-500 sm:mt-1 sm:text-xl sm:tracking-wide"
+                class="font-expletus text-2xl text-[#efece8] selection:text-green-500 sm:mt-1 sm:text-xl sm:tracking-wide sm:text-gray-500"
               >
                 Based in Uzbekistan
               </h1>
             </div>
           </div>
 
-          <div class="sm:w-2/3 sm:mt-10 relative">
+          <div class="relative mt-10 hidden w-2/3 sm:block">
             <p
-              class="sm:text-gray-500 font-gideon selection:text-green-500 sm:text-base text-green-500"
+              class="font-expletus text-xl text-green-600 selection:text-green-500 sm:font-gideon sm:text-base sm:text-gray-500"
             >
               I am a JavaScript enthusiast and TypeScript advocate. <br /> People
               call me a Full-Stack developer, just because I can break both Frontend
@@ -96,12 +101,17 @@ import BlogButton from "../button/Blog.astro";
             </p>
           </div>
 
+          <p
+            class="mt-8 font-expletus text-xl text-green-600 selection:text-green-500 sm:font-gideon sm:text-base sm:text-gray-500"
+          >
+            I am a JavaScript enthusiast and TypeScript advocate.
+          </p>
           <div class="relative mt-12 hidden h-12 w-fit items-center sm:flex">
             <h1
-              class="mr-8 text-sm text-gray-500 sm:block font-gideon selection:text-green-500"
+              class="mr-8 font-gideon text-sm text-gray-500 selection:text-green-500 sm:block"
             >
               Check out my <b
-                class="underline text-gray-600 decoration-wavy underline-offset-2 decoration-green-500"
+                class="text-gray-600 underline decoration-green-500 decoration-wavy underline-offset-2"
                 >Tech</b
               >{" "}
               <span class="text-green-500">blog</span>
@@ -109,7 +119,7 @@ import BlogButton from "../button/Blog.astro";
             <BlogButton />
           </div>
         </div>
-        <div class="items-center sm:flex hidden">
+        <div class="hidden items-center sm:flex">
           <Shape />
         </div>
       </div>
@@ -118,22 +128,22 @@ import BlogButton from "../button/Blog.astro";
 
   <!-- Bottom green section -->
   <div
-    class="h-36 w-full mx-auto sm:flex hidden items-end bg-green-900 relative"
+    class="relative mx-auto hidden h-36 w-full items-end bg-green-900 sm:flex"
   >
     <!-- Bottom Right Half Circle -->
-    <div class="absolute right-6 bottom-8 w-20 h-20">
+    <div class="absolute right-6 bottom-8 h-20 w-20">
       <div
-        class="w-full h-full border border-green-700 rounded-full border-dashed"
+        class="h-full w-full rounded-full border border-dashed border-green-700"
       >
       </div>
-      <div class="w-1/2 h-1/2 absolute left-0 top-0 bg-green-900"></div>
+      <div class="absolute left-0 top-0 h-1/2 w-1/2 bg-green-900"></div>
     </div>
     <!-- Bottom Dashed Line -->
-    <div class="w-full h-[72px] border-t border-green-700 border-dashed"></div>
+    <div class="h-[72px] w-full border-t border-dashed border-green-700"></div>
   </div>
   <!-- Dashed Line on the RIGHT side -->
   <div
-    class="absolute inset-x-16 border-r border-green-700 border-dashed hidden sm:block"
+    class="absolute inset-x-16 hidden border-r border-dashed border-green-700 sm:block"
   >
     <div class="h-screen"></div>
     <div class="h-36"></div>

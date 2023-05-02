@@ -5,11 +5,9 @@ import GitMerge from "@icons/GitMerge.astro";
 import GitPullRequest from "@icons/GitPullRequest.astro";
 ---
 
-<div class="flex items-center justify-center relative">
+<div class="relative flex items-center justify-center">
   <svg
-    class="absolute animate-spin-115-back"
-    width="415"
-    height="415"
+    class="absolute h-[335px] w-[335px] animate-spin-115-back sm:h-[415px] sm:w-[415px]"
     viewBox="0 0 415 415"
     fill="none"
   >
@@ -21,7 +19,11 @@ import GitPullRequest from "@icons/GitPullRequest.astro";
       stroke-dasharray="3 3"></circle>
   </svg>
 
-  <svg width="521" height="521" viewBox="0 0 521 521" fill="none">
+  <svg
+    class="w-[421px h-[421px] sm:h-[521px] sm:w-[521px]"
+    viewBox="0 0 521 521"
+    fill="none"
+  >
     <path
       d="M447.5 260C447.5 363.558 364.444 447.5 262 447.5C159.556 447.5 76.5001 363.558 76.5001 260C76.5001 156.442 159.556 72.5 262 72.5C364.444 72.5 447.5 156.442 447.5 260Z"
       stroke="#F4F4F4"
@@ -315,20 +317,20 @@ import GitPullRequest from "@icons/GitPullRequest.astro";
     </defs>
   </svg>
 
-  <div class="absolute w-56 h-56 animate-spin-115">
+  <div class="absolute h-[182px] w-[182px] animate-spin-115 sm:h-56 sm:w-56">
     <div
-      class="absolute w-7 h-7 -right-[14px] -top-[14px] animate-spin-115-back"
+      class="absolute -right-[14px] -top-[14px] h-7 w-7 animate-spin-115-back"
     >
       <GitDraft className="fill-red-200 z-10 absolute w-full h-full" />
     </div>
-    <div class="absolute w-8 h-8 -left-4 -top-4 animate-spin-115-back">
+    <div class="absolute -left-4 -top-4 h-8 w-8 animate-spin-115-back">
       <GitMerge className="opacity-70 w-full h-full" />
     </div>
-    <div class="absolute w-8 h-8 -right-4 -bottom-4 animate-spin-115-back">
+    <div class="absolute -right-4 -bottom-4 h-8 w-8 animate-spin-115-back">
       <GitBranch className="opacity-20 w-full h-full" />
     </div>
     <div
-      class="absolute w-7 h-7 -left-[14px] -bottom-[14px] animate-spin-115-back"
+      class="absolute -left-[14px] -bottom-[14px] h-7 w-7 animate-spin-115-back"
     >
       <GitPullRequest className="fill-indigo-300/60 w-full h-full" />
     </div>

@@ -1,16 +1,196 @@
 ---
 import Timeline from "@icons/Timeline.astro";
+import Resume from "@components/button/Resume.astro";
 ---
 
 <section
-  class="relative w-full bg-[#efece8] h-[1200px] py-10 flex items-center flex-col"
+  class="relative flex w-full flex-col items-center bg-[#efece8] py-10"
   id="career"
 >
-  <h1 class="text-5xl font-bold font-gideon text-green-600 text-center">
-    Career Timeline
-  </h1>
+  <!-- Title -->
+  <div>
+    <h1
+      class="w-full bg-gradient-to-r from-slate-400 to-green-500 bg-clip-text font-frederic text-4xl text-transparent sm:text-5xl"
+    >
+      Career Timeline
+    </h1>
+  </div>
+  <!-- DESKTOP VERSION-->
+  <div class="mx-auto hidden flex-col items-center md:flex">
+    <div class="h-36"></div>
+
+    <div class="relative mt-2 flex h-52">
+      <div class="absolute right-32 h-full min-w-max pt-5">
+        <h1 class="text-center font-frederic text-3xl text-green-400">
+          Discover Invest
+        </h1>
+      </div>
+      <div class="absolute left-60 top-6 min-w-max">
+        <h1 class="text-center font-gideon text-xl font-bold text-slate-600">
+          Back End Developer
+        </h1>
+      </div>
+      <div class="absolute left-12 top-[110px] min-w-max">
+        <div
+          class="flex flex-col gap-2.5 font-gideon text-sm font-semibold text-slate-500"
+        >
+          <div class="flex items-center text-slate-400">
+            <p>In Office</p>
+            <span class="mx-1.5 block h-1 w-1 rounded-full bg-slate-400"></span>
+            <p>Tashkent, Uzbekistan.</p>
+          </div>
+
+          <p>
+            Helped the team to build internal HR platform for managing
+            employees.
+          </p>
+          <p>
+            Used technologies such as <span class="text-slate-600"
+              >Node.js, Express, MongoDB</span
+            > & <span class="text-slate-600">WebSocket</span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1
+          class="relative z-10 flex h-[78px] items-center font-frederic font-bold"
+        >
+          2018
+        </h1>
+      </div>
+    </div>
+
+    <div class="relative mt-3 flex h-52">
+      <div class="absolute left-32 h-full min-w-max pt-5">
+        <h1 class="text-center font-frederic text-3xl text-green-400">
+          Freelance
+        </h1>
+      </div>
+      <div class="absolute right-60 h-full min-w-max pt-6">
+        <h1 class="text-center font-gideon text-xl font-bold text-slate-600">
+          Full Stack Engineer
+        </h1>
+      </div>
+      <div class="absolute right-12 top-[111px] min-w-max">
+        <div
+          class="flex flex-col gap-2.5 text-right font-gideon text-sm font-semibold text-slate-500"
+        >
+          <div class="flex items-center justify-end text-slate-400">
+            <p>Remote</p>
+            <span class="mx-1.5 block h-1 w-1 rounded-full bg-slate-400"></span>
+            <p>Uzbekistan / Russia.</p>
+          </div>
+
+          <p>
+            Build <span class="text-slate-600">Loadboard</span> for logistics company
+            & <span class="text-slate-600">Tender Platform</span> for Uzbekistan
+            Railways
+          </p>
+          <p>
+            Stack: <span class="text-slate-600"
+              >React, Redux, Node.js, Express</span
+            > & Integrations with: <span class="text-slate-600"
+              >Gmail API, OneID</span
+            >
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1
+          class="relative z-10 flex h-[80px] items-center font-frederic font-bold"
+        >
+          2020
+        </h1>
+      </div>
+    </div>
+
+    <div class="relative mt-2.5 flex h-52">
+      <div class="absolute right-32 h-full min-w-max pt-[22px]">
+        <h1 class="text-center font-frederic text-3xl text-green-400">
+          BeeJee
+        </h1>
+      </div>
+      <div class="absolute left-60 h-full min-w-max pt-7">
+        <h1 class="text-center font-gideon text-xl font-bold text-slate-600">
+          Full Stack Engineer
+        </h1>
+      </div>
+      <div class="absolute left-12 top-[114px] min-w-max">
+        <div
+          class="flex flex-col gap-2.5 font-gideon text-sm font-semibold text-slate-500"
+        >
+          <div class="flex items-center text-slate-400">
+            <p>Remote</p>
+            <span class="mx-1.5 block h-1 w-1 rounded-full bg-slate-400"></span>
+            <p>Ukrain.</p>
+          </div>
+          <p>
+            Mainly maintained different apps, involved in architectural
+            desicions.
+          </p>
+          <p>
+            Stack: <span class="text-slate-600">React, Next.js, Express</span>
+            &
+            <span class="text-slate-600">Nest.js</span> Architectures: <span
+              class="text-slate-600">Microservices, Event-Driven</span
+            >
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1
+          class="relative z-10 flex h-[84px] items-center font-frederic font-bold"
+        >
+          2021
+        </h1>
+      </div>
+    </div>
+
+    <div class="relative mt-4 flex h-52">
+      <div class="absolute left-32 h-full min-w-max pt-5">
+        <h1 class="text-center font-frederic text-3xl text-green-400">
+          Vention
+        </h1>
+      </div>
+      <div class="absolute right-60 h-full min-w-max pt-6">
+        <h1 class="text-center font-gideon text-xl font-bold text-slate-600">
+          Full Stack Engineer
+        </h1>
+      </div>
+      <div class="absolute right-12 top-[111px] min-w-max">
+        <div
+          class="flex flex-col gap-2.5 text-right font-gideon text-sm font-semibold text-slate-500"
+        >
+          <div class="flex items-center justify-end text-slate-400">
+            <p>Remote</p>
+            <span class="mx-1.5 block h-1 w-1 rounded-full bg-slate-400"></span>
+            <p>England.</p>
+          </div>
+
+          <p>
+            Working on <span class="text-slate-600">StartUp</span> project & mainly
+            focusing on <span class="text-slate-600">Front End.</span>
+          </p>
+          <p>
+            Stack: <span class="text-slate-600">React, TypeScript, GraphQL</span
+            > & <span class="text-slate-600">PostgreSQL</span> all on <span
+              class="text-slate-600">Serverless Architecture.</span
+            >
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1
+          class="relative z-10 flex h-[82px] items-center font-frederic font-bold"
+        >
+          2022
+        </h1>
+      </div>
+    </div>
+  </div>
   <Timeline />
-  <div class="max-w-5xl mx-auto border h-2">
-    <p>Discover Invest</p>
+
+  <div class="mt-16">
+    <Resume />
   </div>
 </section>

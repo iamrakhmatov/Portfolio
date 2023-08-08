@@ -11,9 +11,6 @@ dependencies:
   '@fontsource/expletus-sans':
     specifier: ^4.5.13
     version: 4.5.13
-  '@fontsource/farro':
-    specifier: ^4.5.10
-    version: 4.5.10
   '@fontsource/fredericka-the-great':
     specifier: ^4.5.9
     version: 4.5.9
@@ -589,10 +586,6 @@ packages:
 
   /@fontsource/expletus-sans@4.5.13:
     resolution: {integrity: sha512-ilHZ2TB3uFUQNmxAGeS7fwtH6VLl8/j/ajY7GQmRz4nAq7KGSFi6aRLhXSMnh1pZSWsfUGy/RWXntJwAgpF1dg==}
-    dev: false
-
-  /@fontsource/farro@4.5.10:
-    resolution: {integrity: sha512-Gp/+AnqKN/fMMX63s5JtDPBAvWxYt0QcboAl2H5+gruBS3AxYtiRKXOdBgHS5EFD4Qt3ko/4U4rNYGhRG54g0Q==}
     dev: false
 
   /@fontsource/fredericka-the-great@4.5.9:

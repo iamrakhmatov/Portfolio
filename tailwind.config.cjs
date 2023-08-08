@@ -37,7 +37,6 @@ module.exports = {
         expletus: ["Expletus Sans"],
         frederic: ["Fredericka the Great"],
         gideon: ["Gideon Roman"],
-        farro: ["Farro"],
       },
       colors: {
         green: {
